@@ -15,9 +15,9 @@ const images = [
   },
 ];
 
-const imageMarkup = images.map((image) => `<li>
+const imageMarkup = images.map((image) => `<ul>
     <img src="${image.url}" alt="${image.alt}" />
-  </li>`).join('');
+  </ul>`).join('');
 
 list.insertAdjacentHTML("beforeend", imagesMarkup);
 gallery.style.display = 'flex';
