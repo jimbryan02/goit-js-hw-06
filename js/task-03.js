@@ -15,10 +15,10 @@ const images = [
   },
 ];
 
-const imageMarkup = images.map((image) => `<ul>
+const imageMarkup = images.map((image) => `<li>
     <img src="${image.url}" alt="${image.alt}" />
-  </ul>`).join('');
+  </li>`).join('');
 
-list.insertAdjacentHTML("beforeend", imagesMarkup);
+gallery.insertAdjacentHTML("beforeend", imagesMarkup);
 gallery.style.display = 'flex';
 gallery.style.flexWrap = 'wrap';
